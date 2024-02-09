@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "Rate Calculator";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Want to learn how to play some board games? Well consider hiring me, the Board Game Guy, to teach you!
+    <br />
+    <hr />
+    </p>
+<br />
+<div style="display: flex;">
+    <div style="flex: 1; margin-right: 10px;">
+        <form>
+            <fieldset>
+                <legend style="font-size: 18px">I am teaching you without playing:</legend>
+                <br />
+                <label for="hours">Hours:</label>
+                <input type="number" id="hours" value="0" />
+                <br />
+                <br />
+                <style>
+                    td, th {
+                        padding-right: 20px;
+                    }
+                    table{
+                        border-collapse: collapse;
+                        border: 2px solid black;
+                    }
+                    th{
+                        border-bottom: 2px solid black;
+
+                    }
+                </style>
+                <table>
+                    <tr>
+                        <th>Rates</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>1 - 2 hrs:</td>
+                        <td>$15/hr</td>
+                    </tr>
+                    <tr>
+                        <td>2 - 4 hrs:</td>
+                        <td>$30/hr</td>
+                    </tr>
+                    <tr>
+                        <td>4 - 8 hrs:</td>
+                        <td>$45/hr</td>
+                    </tr>
+                    <tr>
+                        <td>8+ hrs:</td>
+                        <td>$45/hr until 8 hrs, then $50/hr</td>
+                    </tr>
+                </table>
+                <br />
+                <input type="button" value="Calculate" id="calculate" />
+                <br />
+                <br />
+            </fieldset>
+        </form>
+        <p id="totalCost">Total Cost:</p>
+    </div>
+    <div style="flex: 1;">
+        <form>
+            <fieldset>
+                <legend style="font-size: 18px">I am teaching you but you let me also play:</legend>
+                <br />
+                <label for="hours2">Hours:</label>
+                <input type="number" id="hours2" value="0" />
+                <br />
+                <br />
+                <style>
+                    td, th {
+                        padding-right: 20px;
+                    }
+
+                    table {
+                        border-collapse: collapse;
+                        border: 2px solid black;
+                    }
+
+                    th {
+                        border-bottom: 2px solid black;
+                    }
+                </style>
+                <table>
+                    <tr>
+                        <th>Rates</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>1 - 2 hrs:</td>
+                        <td>$15/hr</td>
+                    </tr>
+                    <tr>
+                        <td>2 - 4 hrs:</td>
+                        <td>$30/hr</td>
+                    </tr>
+                    <tr>
+                        <td>4 - 8 hrs:</td>
+                        <td>$45/hr</td>
+                    </tr>
+                    <tr>
+                        <td>8+ hrs:</td>
+                        <td>$45/hr until 8 hrs, then $50/hr</td>
+                    </tr>
+                </table>
+                <br />
+                <input type="button" value="Calculate" id="calculate2" />
+                <br />
+                <br />
+            </fieldset>
+        </form>
+        <p id="totalCost2">Total Cost:</p>
+    </div>
+</div>
